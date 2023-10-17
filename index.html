@@ -1,75 +1,54 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!-- index.html -->
 
-<head>
-    <meta charset="utf-8" >
-    <title>Project - Landing Page</title>
-    <link href="style.css" rel="stylesheet" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,900&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+	<link rel="stylesheet" href="styles.css"> 
+	<title>Rock Paper Scissor</title> 
+</head> 
+<body> 
+	<section class="game"> 
+		<!--Title -->
+		<div class="title">Rock Paper Scissor</div> 
+		
+		<!--Display Score of player and computer -->
+		<div class="score"> 
+			<div class="playerScore"> 
+				<h2>Player</h2> 
+				<p class="p-count count">0</p> 
 
-</head>
+			</div>	 
+			<div class="computerScore"> 
+				<h2>Computer</h2> 
+				<p class="c-count count">0</p> 
 
-<body>
-    <script></script>
-    <header>
-               
-    </header>
-    <main>
-        <section class="Subjects">
-            <p class="titlemain">Lessons learned</p>
-        <div class="container">
-        <div class="box1">
-            <div class="box"><img src="./IMG/git.png" alt="git logo" class="image"></div>
-            <p class="title">Git Basics</p>
-        </div>
-        <div class="box2">
-            <div class="box"><img src="./IMG/html.png" alt="html logo" class="image"></div>
-            <p class="title">HTML Foundations</p>
-        </div>
+			</div> 
+		</div> 
+		
+		<div class="move">Choose your move</div> 
+		
+		<!--Number of moves left before game ends -->
+		<div class="movesleft">Moves Left: 10 </div> 
+		
+		<!--Options available to player to play game -->
+		<div class="options"> 
+			<button class="rock">Rock</button> 
+			<button class="paper">Paper</button> 
+			<button class="scissor">Scissors</button>	 
+		</div> 
+		
+		<!--Final result of game -->
+		<div class="result"></div> 
+		
+		<!--Reload the game -->
+		<button class="reload"></button> 
 
-        <div class="box3">
-            <div class="box"><img src="./IMG/CSS3_logo.svg" alt="css logo" class="image"></div>
-            <p class="title">CSS Foundations</p>
-        </div>
+	</section> 
 
-        <div class="box3">
-            <div class="box"><img src="./IMG/flexbox.png" alt="git logo" class="image"></div> 
-            <p class="title">Flexbox</p>
-        </div>
-
-        </div>
-        </section>
-        
-    <section>
-            <div class="quote">
-            <p class="quote_text">Innovation distinguishes between a leader and a follower.</p>
-            <h4 class="author">Steve Jobs</h4>
-            </div>
-    </section>
-    <section class="section action">
-        <div class="next">
-            <div>
-            <h3>In the next Javascript</h3>
-            <p>Click to go on to the next lesson.</p>
-        </div>
-        <div><button class="nextbutton">Next</button></div></div>
-        
-    </section>
-    </main>
-
-    <footer>
-        <div class="Copyright">
-            <p>Copyright © The Odin Project 2023</p>
-            <span class="hassanadraou">By <a href="https://github.com/Adraouha" target="_blank" class="adraou">Hassan Adraou</a> </span>
-        </div>
-    </footer>
-</body>
-
+	<script src="app.js"></script> 
+</body> 
 </html>
